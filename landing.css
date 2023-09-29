@@ -1,0 +1,84 @@
+
+/* Logo styles */
+.logo {
+    position: absolute;
+    top: 7rem;
+    left: 5rem;
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+    z-index: 3; /* Place the logo above other content */
+}
+.background{
+    height: 100vh;
+    width: 100vw;
+    z-index:-1;
+}
+.background::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7) 65.97%, rgba(0, 0, 0, 0.3));
+}
+/* Landing Page styles */
+.landing {
+    padding: 10px 20px;
+    height: 100vh;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    justify-content: flex-end; /* Place content on the right side */
+    align-items: center;
+    position: relative; /* Hide overflowing content */
+    margin-bottom: 20px;
+    /* padding-right: 5rem; */
+    overflow: visible;
+}
+
+/* Landing Page Content styles */
+.landing-content {
+    color: #fff;
+    border-radius: 10px;
+    max-width: 80%; /* Adjust the width as needed */
+    text-align: center;
+    position: absolute;
+    left: 5rem; /* Adjust the left position as needed */
+    top: 25%;
+    text-align: left;
+    z-index: 10;
+}
+
+.landing-content h1 {
+    font-size: 4.5rem;
+}
+
+.landing-content p {
+    font-size: 1.5rem;
+    margin-top: 4rem;
+    width: 50%;
+}
+
+/* Learn More Button styles */
+.learn-more-button {
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    transform: scale(1.2);
+    z-index:30;
+}
+
+.learn-more-button:hover {
+    background-color: #fff;
+    color: #333;
+}
+/* Water Waves Image styles */
+
+

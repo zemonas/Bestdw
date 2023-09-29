@@ -1,0 +1,332 @@
+/* Reset some default styles for better consistency */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #333;
+    line-height: 1.6;
+    overflow:visible;
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the navigation items horizontally */
+    top: 0; /* Place the navigation bar at the top of the viewport */
+    z-index: 1000; /* Ensure the navigation bar is on top of other elements */
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Landing Page styles */
+
+/* Right Image styles */
+.right-image {
+    /* position: absolute; */
+    float: right;
+    right: 0;
+    left:51%;
+    margin-top: -55%;
+    margin-bottom:-5%;
+    margin-left: 2%;
+    width: 50%;
+    height: auto;
+    z-index: 0; /* Place it above the water waves */
+    overflow: visible;
+}
+.water-waves {
+    position: absolute;
+    left: 0;
+    top: 80%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Place it behind other content in the section */
+}
+
+/* What We Do Section styles */
+.what-we-do {
+    /* background-color: #f0f0f0; Set background color for the entire section */
+    padding: 30px;
+    margin-top: 15px;
+    z-index:0;
+
+}
+
+
+/* Left Content styles */
+.what-we-do h2 {
+    font-size: 4.5rem;
+    padding: 20px;
+    z-index:3;
+    color: #fff;
+    z-index:5;
+}
+
+
+/* Categories by Deal Section styles */
+.categories {
+    /* background-color: #f0f0f0; */
+    padding: 40px;
+    text-align: center;
+}
+.what-we-do-text1{
+    font-size: 2rem;
+    display: inline-block;
+    color: #000000;
+    background-color:#fff;
+    border-radius: 10px;
+    width: 48%;
+    margin-top: 42px;
+    margin-bottom: -15px;
+    padding-bottom: 15px;
+
+}
+.what-we-do-text1 p{
+    padding: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.what-we-do-text2{
+    font-size: 2rem;
+    display: inline-block;
+    color: #000000;
+    background-color:#fff;
+    border-radius: 10px;
+    margin-top: -50px;
+    padding: 0px;
+
+}
+.what-we-do-text2 p{
+    padding: 20px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+
+/* Categories by Deal Section styles */
+.categories {
+    text-align: center;
+    padding: 20px;
+}
+
+.categories h2 {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    padding: 40px;
+    color:#fff;
+}
+
+.boxes{
+    display: flex;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* Category Card styles */
+.category-card {
+    display: inline-block;
+    width: 400px; /* Adjust the width as needed */
+    height: 700px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.category-image {
+    height: 700px; /* Set the height of the background image */
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+}
+
+.category-card h3 {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 30px;
+    background-color: rgba(255, 255, 255, 0.7); /* Background color for label */
+    color: #000000;
+    padding: 20px;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Experience the Thrill Section styles */
+.experience-thrill {
+    text-align: center;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#fff;
+}
+
+.experience-thrill h2 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.experience-note {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+/* Activity Collage styles using CSS Grid */
+.activity-collage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns */
+    grid-template-rows: repeat(2, 1fr); /* Two rows */
+    /* width: 80vh; Set a maximum width for the collage */
+    gap: 0;
+    width: 100%;
+    height: auto;
+}
+
+.activity-card {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.activity-card img {
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.full-height {
+    grid-row: span 2; /* Two rows height */
+}
+
+.half-height {
+    grid-column: 2; /* One column width */
+    grid-row: span 1; /* One row height */
+}
+
+/* Define the second row for the third image */
+.activity-card.second-row {
+    grid-row: 2 / 3; /* Start at the second row and end at the third row */
+}
+
+
+
+
+/* Best Sellers Carousel styles */
+.best-sellers {
+    text-align: center;
+    padding: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.best-sellers h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Additional CSS styles for card and carousel */
+.carousel {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  
+  .card {
+    width: 23%; /* Adjust the card width as needed */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    margin-right: 20px; /* Margin between cards */
+  }
+  
+  .card:last-child {
+    margin-right: 0; /* Remove margin for the last card */
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-label {
+    background-color: rgba(255, 0, 0, 0.8);
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .card-bg {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-bg img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(0, 0, 0, 0.2), transparent); /* Create a vignette effect */
+  }
+  
+  .card-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    text-align: left;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
