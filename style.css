@@ -13,48 +13,18 @@ body {
     overflow:visible;
 }
 
-/* Navigation bar styles */
-nav {
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    padding: 20px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center the navigation items horizontally */
-    top: 0; /* Place the navigation bar at the top of the viewport */
-    z-index: 1000; /* Ensure the navigation bar is on top of other elements */
-}
 
-nav ul {
-    list-style-type: none;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-/* Landing Page styles */
 
 /* Right Image styles */
 .right-image {
-    /* position: absolute; */
+    position: absolute;
     float: right;
     right: 0;
-    left:51%;
-    margin-top: -55%;
+    left: 50%;
+    width: 70%;
+    margin-top: -40%;
     margin-bottom:-5%;
     margin-left: 2%;
-    width: 50%;
     height: auto;
     z-index: 0; /* Place it above the water waves */
     overflow: visible;
@@ -83,8 +53,9 @@ nav a {
     font-size: 4.5rem;
     padding: 20px;
     z-index:3;
-    color: #fff;
+    color: #fff;s
     z-index:5;
+    margin-top: 5%;
 }
 
 
@@ -101,7 +72,7 @@ nav a {
     background-color:#fff;
     border-radius: 10px;
     width: 48%;
-    margin-top: 42px;
+    margin-top: 45px;
     margin-bottom: -15px;
     padding-bottom: 15px;
 
@@ -243,6 +214,7 @@ nav a {
     padding: 80px;
     align-items: center;
     justify-content: center;
+    color: #fff;
 }
 
 .best-sellers h2 {
@@ -273,19 +245,20 @@ nav a {
     margin-right: 0; /* Remove margin for the last card */
   }
   
-  .card:hover {
-    transform: scale(1.05);
+/* Define a CSS class for adding a shadow */
+.shadow {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Change the values as needed */
   }
   
   .card-label {
-    background-color: rgba(255, 0, 0, 0.8);
+    background-color: rgba(0, 192, 118, 0.8);
     color: #fff;
     font-weight: bold;
     position: absolute;
     top: 10px;
-    left: 10px;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 5px 100px;
+  border-radius: 0 15px 15px 0;
+  z-index: 4;
   }
   
   .card-bg {
@@ -313,11 +286,11 @@ nav a {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    right: 10px;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 10px;
+    padding: 20px 30px;
     border-radius: 0 0 10px 10px;
     text-align: left;
+    background: linear-gradient(rgba(0, 0, 0, 0.7) 65.97%, rgba(0, 0, 0, 0.3));
+    color: #fff;
   }
   
   .card h3 {

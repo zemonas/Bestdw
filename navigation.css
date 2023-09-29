@@ -1,0 +1,45 @@
+/* Styles for the full-width navigation bar */
+.full-width-nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .full-width-nav .left-icon img {
+    width: 30px; /* Adjust the width and height as needed for your icon */
+    height: 30px;
+  }
+  
+  .full-width-nav .right-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70%; /* Adjust the width for the navigation items */
+  }
+  
+  .full-width-nav .right-nav li {
+    margin-left: 20px; /* Adjust the spacing between navigation items */
+    padding: 0 50px;
+}
+  
+  .full-width-nav .right-nav li:first-child {
+    margin-left: 0; /* Remove margin for the first navigation item */
+  }
+  
+  .full-width-nav .right-nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Media query to adjust navigation bar on smaller screens */
+  @media screen and (max-width: 768px) {
+    .full-width-nav .right-nav {
+      display: none; /* Hide the navigation items by default */
+    }
+  }
+  
