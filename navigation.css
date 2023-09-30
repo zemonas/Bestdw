@@ -36,6 +36,22 @@
     text-decoration: none;
     color: #fff;
   }
+
+  #red-dot {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    transform: translate(50%, -50%);
+    display: none; /* Initially hidden */
+  }
+
+  #cart-link{
+    position: relative;
+  }
   
   /* Media query to adjust navigation bar on smaller screens */
   @media screen and (max-width: 768px) {

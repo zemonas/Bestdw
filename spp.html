@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farmhouse Product Page</title>
+    <link rel="stylesheet" href="spp.css" />
+    <link rel="stylesheet" href="navigation.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="full-width-nav background_blur">
+      <div class="left-icon">
+        <a href="cart.html" id="cart-link">
+          <img src="images/Group 4402.png" alt="Icon" />
+          <div id="red-dot"></div>
+        </a>
+      </div>
+      <ul class="right-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="farmhouse.html">Farmhouse</a></li>
+        <li><a href="index.html">Water Parks</a></li>
+        <li><a href="index.html">Club & Bar</a></li>
+        <li class="login">
+          <a href="index.html"
+            ><i><img src="images/Path 111.png" alt="Icon" /></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>Farmhouse Product</h1>
+    </header>
+    <main>
+      <section class="photo-section">
+        <div class="main-photo">
+          <img src="images/Group 4345.png" alt="Main Photo" id="main-photo" />
+        </div>
+        <div class="small-photos">
+          <img
+            src="images/Group 4345.png"
+            alt="Photo 1"
+            class="small-photo"
+            data-src="images/Group 4345.png"
+          />
+          <img
+            src="images/Group 4345.png"
+            alt="Photo 2"
+            class="small-photo"
+            data-src="images/Group 4345.png"
+          />
+          <img
+            src="images/Group 4345.png"
+            alt="Photo 3"
+            class="small-photo"
+            data-src="images/Group 4345.png"
+          />
+        </div>
+      </section>
+      <section class="details-section">
+        <h1>Product Name</h1>
+        <!-- Added product name -->
+        <h2>Book Your Stay</h2>
+        <div class="date-selector">
+          <label for="check-in">Check-in Date:</label>
+          <input type="date" id="check-in" />
+          <label for="check-out">Check-out Date:</label>
+          <input type="date" id="check-out" />
+        </div>
+        <div class="price-calculator">
+          <p>Total Price:</p>
+          <span id="total-price">₹ 1350</span>
+        </div>
+        <div class="farm-details">
+          <h2>Farm Details</h2>
+          <p>Size: 1000 sq. ft.</p>
+          <p>Amenities: Pool, Wi-Fi, BBQ</p>
+          <p>
+            Description: Enjoy a peaceful retreat on our beautiful farmhouse.
+          </p>
+        </div>
+        <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="images/Group 4401.png" alt="Best Deal Logo" />
+        </div>
+        <div class="footer-info">
+          <h4>Contact Us</h4>
+          <p>
+            123 Street Name<br />Delhi, India<br />Phone: +91 123 456 789<br />Email:
+            info@bestdeal.com
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Adventure Parks</a></li>
+            <li><a href="#">Water Parks</a></li>
+            <!-- Add more links as needed -->
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <ul>
+            <!-- <li>
+                <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
+              </li> -->
+            <!-- Add more social media icons and links as needed -->
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="spp.js"></script>
+  </body>
+</html>
