@@ -1,22 +1,22 @@
 // JavaScript
-// JavaScript to conditionally display the red dot and make it a link to cart.html
-document.addEventListener("DOMContentLoaded", function () {
-  const cartLink = document.getElementById("cart-link");
-  const redDot = document.getElementById("red-dot");
+const cartLink = document.getElementById("cart-link");
+const redDot = document.getElementById("red-dot");
 
-  // Retrieve product details from localStorage
+// Function to update the red dot based on the number of items in the cart
+function updateRedDot() {
   const productDetails = JSON.parse(localStorage.getItem("productDetails"));
-
   if (productDetails && Object.keys(productDetails).length > 0) {
-    // If there are items in the cart, show the red dot and make it a link to cart.html
+    // If there are items in the cart, show the red dot and update its content
+    const itemCount = Object.keys(productDetails).length;
     redDot.style.display = "block";
+    redDot.textContent = itemCount; // Update the red dot with the item count
     cartLink.href = "cart.html";
   } else {
     // If the cart is empty, hide the red dot and disable the link
     redDot.style.display = "none";
     cartLink.removeAttribute("href");
   }
-});
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   const mainPhoto = document.getElementById("main-photo");
@@ -97,5 +97,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Display a message or perform other actions
     alert("Added to cart!");
+
+    // Update the red dot after successfully adding to the cart
+    updateRedDot();
   });
 });
