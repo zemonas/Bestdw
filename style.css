@@ -1,105 +1,96 @@
-/* Reset some default styles for better consistency */
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-/* Global styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #000000;
     color: #333;
     line-height: 1.6;
-    overflow:visible;
+    overflow: visible;
 }
 
+h1, h2, h3 {
+    font-weight: 300;
+}
 
+p {
+    font-weight: 100;
+}
 
-/* Right Image styles */
 .right-image {
     position: absolute;
     float: right;
     right: 0;
     left: 50%;
     width: 70%;
-    margin-top: -40%;
-    margin-bottom:-5%;
+    margin-top: -50%;
+    margin-bottom: -5%;
     margin-left: 2%;
     height: auto;
-    z-index: 0; /* Place it above the water waves */
+    z-index: 0;
     overflow: visible;
 }
+
 .water-waves {
     position: absolute;
     left: 0;
     top: 80%;
     width: auto;
     height: auto;
-    z-index: -1; /* Place it behind other content in the section */
+    z-index: -1;
 }
 
-/* What We Do Section styles */
 .what-we-do {
-    /* background-color: #f0f0f0; Set background color for the entire section */
     padding: 30px;
     margin-top: 15px;
-    z-index:0;
-
+    z-index: 0;
 }
 
-
-/* Left Content styles */
 .what-we-do h2 {
     font-size: 4.5rem;
     padding: 20px;
-    z-index:3;
-    color: #fff;s
-    z-index:5;
-    margin-top: 5%;
+    z-index: 3;
+    color: #fff;
+    z-index: 5;
+    margin-top: -5%;
 }
 
-
-/* Categories by Deal Section styles */
-.categories {
-    /* background-color: #f0f0f0; */
-    padding: 40px;
-    text-align: center;
-}
-.what-we-do-text1{
+.what-we-do-text1 {
     font-size: 2rem;
     display: inline-block;
     color: #000000;
-    background-color:#fff;
+    background-color: #fff;
     border-radius: 10px;
     width: 48%;
     margin-top: 45px;
     margin-bottom: -15px;
     padding-bottom: 15px;
-
 }
-.what-we-do-text1 p{
+
+.what-we-do-text1 p {
     padding: 20px;
     padding-bottom: 0;
     margin-bottom: 0;
 }
-.what-we-do-text2{
+
+.what-we-do-text2 {
     font-size: 2rem;
     display: inline-block;
     color: #000000;
-    background-color:#fff;
+    background-color: #fff;
     border-radius: 10px;
     margin-top: -50px;
     padding: 0px;
-
 }
-.what-we-do-text2 p{
+
+.what-we-do-text2 p {
     padding: 20px;
     padding-top: 0;
     margin-top: 0;
 }
 
-
-/* Categories by Deal Section styles */
 .categories {
     text-align: center;
     padding: 20px;
@@ -109,19 +100,19 @@ body {
     font-size: 5rem;
     margin-bottom: 3rem;
     padding: 40px;
-    color:#fff;
+    color: #fff;
 }
 
-.boxes{
+.boxes {
     display: flex;
     padding: 20px;
     justify-content: space-evenly;
     align-items: center;
 }
-/* Category Card styles */
+
 .category-card {
     display: inline-block;
-    width: 400px; /* Adjust the width as needed */
+    width: 400px;
     height: 700px;
     margin: 10px;
     position: relative;
@@ -130,7 +121,7 @@ body {
 }
 
 .category-image {
-    height: 700px; /* Set the height of the background image */
+    height: 700px;
     background-size: cover;
     background-position: center;
     text-align: left;
@@ -141,14 +132,13 @@ body {
     bottom: 40px;
     left: 0;
     right: 30px;
-    background-color: rgba(255, 255, 255, 0.7); /* Background color for label */
+    background-color: rgba(255, 255, 255, 0.7);
     color: #000000;
     padding: 20px;
     margin: 0;
     font-size: 2.5rem;
 }
 
-/* Experience the Thrill Section styles */
 .experience-thrill {
     text-align: center;
     padding: 80px;
@@ -156,7 +146,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:#fff;
+    background-color: #fff;
 }
 
 .experience-thrill h2 {
@@ -169,12 +159,10 @@ body {
     margin-bottom: 40px;
 }
 
-/* Activity Collage styles using CSS Grid */
 .activity-collage {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Three columns */
-    grid-template-rows: repeat(2, 1fr); /* Two rows */
-    /* width: 80vh; Set a maximum width for the collage */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
     gap: 0;
     width: 100%;
     height: auto;
@@ -192,23 +180,18 @@ body {
 }
 
 .full-height {
-    grid-row: span 2; /* Two rows height */
+    grid-row: span 2;
 }
 
 .half-height {
-    grid-column: 2; /* One column width */
-    grid-row: span 1; /* One row height */
+    grid-column: 2;
+    grid-row: span 1;
 }
 
-/* Define the second row for the third image */
 .activity-card.second-row {
-    grid-row: 2 / 3; /* Start at the second row and end at the third row */
+    grid-row: 2 / 3;
 }
 
-
-
-
-/* Best Sellers Carousel styles */
 .best-sellers {
     text-align: center;
     padding: 80px;
@@ -222,67 +205,65 @@ body {
     margin-bottom: 20px;
 }
 
-/* Additional CSS styles for card and carousel */
 .carousel {
     display: flex;
     align-items: center;
     padding: 40px;
     justify-content: space-between;
     overflow: hidden;
-  }
-  
-  .card {
-    width: 23%; /* Adjust the card width as needed */
+}
+
+.card {
+    width: 23%;
     position: relative;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
-    margin-right: 20px; /* Margin between cards */
-  }
-  
-  .card:last-child {
-    margin-right: 0; /* Remove margin for the last card */
-  }
-  
-/* Define a CSS class for adding a shadow */
+    margin-right: 20px;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
 .shadow {
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Change the values as needed */
-  }
-  
-  .card-label {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-label {
     background-color: rgba(0, 192, 118, 0.8);
     color: #fff;
     font-weight: bold;
     position: absolute;
     top: 10px;
     padding: 5px 100px;
-  border-radius: 0 15px 15px 0;
-  z-index: 4;
-  }
-  
-  .card-bg {
+    border-radius: 0 15px 15px 0;
+    z-index: 4;
+}
+
+.card-bg {
     position: relative;
     overflow: hidden;
-  }
-  
-  .card-bg img {
+}
+
+.card-bg img {
     max-width: 100%;
     height: auto;
     transition: transform 0.3s ease-in-out;
-  }
-  
-  .card-bg::before {
+}
+
+.card-bg::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(rgba(0, 0, 0, 0.2), transparent); /* Create a vignette effect */
-  }
-  
-  .card-info {
+    background: radial-gradient(rgba(0, 0, 0, 0.2), transparent);
+}
+
+.card-info {
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -291,15 +272,14 @@ body {
     text-align: left;
     background: linear-gradient(rgba(0, 0, 0, 0.7) 65.97%, rgba(0, 0, 0, 0.3));
     color: #fff;
-  }
-  
-  .card h3 {
+}
+
+.card h3 {
     font-size: 1.5rem;
     margin: 0;
-  }
-  
-  .card p {
+}
+
+.card p {
     font-size: 1rem;
     margin: 5px 0;
-  }
-  
+}
